@@ -1,0 +1,51 @@
+# Dependencies
+node_modules/
+packages/*/node_modules/
+
+# Environment files
+.env
+.env.local
+.env.*.local
+*.env
+
+# Build outputs
+dist/
+build/
+packages/*/dist/
+packages/frontend/dist/
+
+# Logs
+*.log
+logs/
+packages/backend/logs/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Windsurf
+.windsurf/
+
+# Prisma
+packages/backend/prisma/*.db
+packages/backend/prisma/*.db-journal
+
+# Test coverage
+coverage/
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+
+# Docker
+*.dockerignore.bak
+
+docs/
+deploy.ps1

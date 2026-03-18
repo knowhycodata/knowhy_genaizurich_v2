@@ -1,0 +1,38 @@
+{
+  "name": "@nora/backend",
+  "version": "1.0.0",
+  "description": "Bilişsel tarama backend servisi - Express + Prisma",
+  "main": "src/index.js",
+  "scripts": {
+    "dev": "nodemon src/index.js",
+    "start": "node src/index.js",
+    "build": "echo 'Backend build complete'",
+    "db:migrate": "dotenv -e ../../.env -- npx prisma migrate dev",
+    "db:generate": "dotenv -e ../../.env -- npx prisma generate",
+    "db:seed": "dotenv -e ../../.env -- node prisma/seed.js"
+  },
+  "prisma": {
+    "seed": "node prisma/seed.js"
+  },
+  "dependencies": {
+    "@google/genai": "^1.0.0",
+    "@prisma/client": "^5.22.0",
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.0",
+    "express-rate-limit": "^7.4.1",
+    "express-validator": "^7.2.0",
+    "helmet": "^8.0.0",
+    "jsonwebtoken": "^9.0.2",
+    "pdfkit": "^0.15.0",
+    "string-similarity": "^4.0.4",
+    "uuid": "^10.0.0",
+    "ws": "^8.18.0"
+  },
+  "devDependencies": {
+    "dotenv-cli": "^11.0.0",
+    "nodemon": "^3.1.7",
+    "prisma": "^5.22.0"
+  }
+}
